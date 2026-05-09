@@ -1,0 +1,29 @@
+[package]
+name = "echoes-of-the-departed"
+version = "0.1.0"
+description = "Desktop game builder driven by Gemma 4 with structural guardrails."
+authors = ["Eli <eli@replicant.ai>"]
+license = "MIT"
+edition = "2021"
+rust-version = "1.70"
+default-run = "echoes-of-the-departed"
+
+[build-dependencies]
+tauri-build = { version = "1.5.6", features = [] }
+
+[dependencies]
+tauri = { version = "1.8.3", features = ["shell-open"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.12", default-features = false, features = ["json", "stream", "rustls-tls"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync"] }
+futures-util = "0.3"
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+strip = true

@@ -1,0 +1,27 @@
+{
+  "name": "echoes-of-the-departed",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Desktop game builder driven by Gemma 4 via Ollama, with structural guardrails so a small model can co-author levels safely.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.6.0",
+    "phaser": "^3.70.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.6.0",
+    "@vitest/ui": "^4.1.5",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vitest": "^4.1.5"
+  }
+}

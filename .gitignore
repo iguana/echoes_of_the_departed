@@ -1,0 +1,25 @@
+node_modules
+dist
+.DS_Store
+
+# Rust build artifacts
+src-tauri/target
+src-tauri/Cargo.lock
+
+# Logs / runtime junk
+*.log
+*.swp
+
+# Editor
+.vscode
+.idea
+
+# Soundtrack directory — keep the dir, ignore user-supplied audio files
+soundtrack/*
+!soundtrack/.gitkeep
+
+# Tauri build manifests / lockfiles that we don't want to track
+src-tauri/.gitignore
+
+# Local test scratch
+/tmp
