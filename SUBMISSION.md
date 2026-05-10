@@ -1,7 +1,7 @@
 # Echoes of the Departed: ten ways one séance game uses Gemma 4
 
 > Submitted to the [Build with Gemma 4](https://dev.to/challenges/google-gemma-2026-05-06) challenge.
-> Repo: <REPO_URL>. Demo video: <YOUTUBE_URL>. MIT-licensed.
+> Repo: https://github.com/iguana/echoes_of_the_departed. Demo video: <YOUTUBE_URL>. MIT-licensed.
 
 ---
 
